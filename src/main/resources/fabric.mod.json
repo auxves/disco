@@ -1,0 +1,24 @@
+{
+	"schemaVersion": 1,
+	"id": "disco",
+	"version": "${version}",
+	"name": "Disco",
+	"description": "Modular music disc loader",
+	"authors": ["arnohovhannisyan"],
+	"contact": {
+		"homepage": "https://github.com/arnohovhannisyan/disco",
+		"sources": "https://github.com/arnohovhannisyan/disco"
+	},
+	"license": "MIT",
+	"icon": "assets/disco/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": ["io.arnohovhannisyan.disco.EntrypointKt::init"]
+	},
+	"depends": {
+		"fabricloader": ">=0.8.7",
+		"fabric": "*",
+		"fabric-language-kotlin": "*",
+		"minecraft": "1.16.x"
+	}
+}
