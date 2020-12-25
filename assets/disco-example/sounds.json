@@ -1,0 +1,6 @@
+{
+	"amazing_song": {
+		"category": "record",
+		"sounds": [{ "name": "disco-example:amazing_song", "stream": true }]
+	}
+}
