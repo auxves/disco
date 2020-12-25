@@ -40,4 +40,4 @@ To create a JAR file from an unpacked addon, simply compress it into a zip file 
 
 <!-- Example -->
 
-[example]: https://github.com/glossnyx/disco/tree/main/example
+[example]: https://github.com/glossnyx/disco/tree/example
