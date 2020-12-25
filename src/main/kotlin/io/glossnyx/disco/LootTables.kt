@@ -1,4 +1,4 @@
-package io.arnohovhannisyan.disco
+package io.glossnyx.disco
 
 import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder
 import net.fabricmc.fabric.api.loot.v1.event.LootTableLoadingCallback

@@ -1,4 +1,4 @@
-package io.arnohovhannisyan.disco
+package io.glossnyx.disco
 
 fun init() {
 	registerDiscs()

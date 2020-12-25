@@ -4,16 +4,16 @@
 	"version": "${version}",
 	"name": "Disco",
 	"description": "Modular music disc loader",
-	"authors": ["arnohovhannisyan"],
+	"authors": ["glossnyx"],
 	"contact": {
-		"homepage": "https://github.com/arnohovhannisyan/disco",
-		"sources": "https://github.com/arnohovhannisyan/disco"
+		"homepage": "https://github.com/glossnyx/disco",
+		"sources": "https://github.com/glossnyx/disco"
 	},
 	"license": "MIT",
 	"icon": "assets/disco/icon.png",
 	"environment": "*",
 	"entrypoints": {
-		"main": ["io.arnohovhannisyan.disco.EntrypointKt::init"]
+		"main": ["io.glossnyx.disco.EntrypointKt::init"]
 	},
 	"depends": {
 		"fabricloader": ">=0.8.7",

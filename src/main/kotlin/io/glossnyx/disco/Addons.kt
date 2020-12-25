@@ -1,4 +1,4 @@
-package io.arnohovhannisyan.disco
+package io.glossnyx.disco
 
 import net.fabricmc.loader.api.FabricLoader
 import net.fabricmc.loader.api.metadata.ModMetadata

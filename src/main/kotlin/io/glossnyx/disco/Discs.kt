@@ -1,4 +1,4 @@
-package io.arnohovhannisyan.disco
+package io.glossnyx.disco
 
 import net.minecraft.item.Item.Settings
 import net.minecraft.item.ItemGroup
