@@ -35,7 +35,7 @@ To create a JAR file from an unpacked addon, simply compress it into a zip file 
 <!-- Distribution -->
 
 [curseforge]: https://www.curseforge.com/minecraft/mc-mods/disco
-[modrinth]: https://www.modrinth.com/mod/disco
+[modrinth]: https://modrinth.com/mod/disco
 [github releases]: https://github.com/glossnyx/disco/releases
 
 <!-- Example -->
