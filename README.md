@@ -4,7 +4,7 @@ Disco is a modular music disc loader built for Fabric.
 
 Being a **loader**, it doesn't add any music discs by default and relies on addon packs to provide the sound files, textures, and translations.
 
-### Dependencies
+## Dependencies
 
 - [Fabric Loader]
 - [Fabric API]
