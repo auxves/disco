@@ -47,6 +47,10 @@ tasks.withType<KotlinCompile> {
 	kotlinOptions.jvmTarget = "1.8"
 }
 
+tasks.withType<Jar> {
+	from("LICENSE")
+}
+
 task<TaskModrinthUpload>("modrinth") {
 	token = System.getenv("MODRINTH_TOKEN")
 	projectId = p("id")
