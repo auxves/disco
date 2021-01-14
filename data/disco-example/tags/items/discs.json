@@ -1,3 +1,3 @@
 {
-	"values": ["disco-example:amazing_song"]
+	"values": [{ "id": "disco-example:amazing_song", "required": false }]
 }
