@@ -1,4 +1,6 @@
-.gradle
-.idea
-build
-run
+/.gradle
+/.idea
+/build
+/gradle
+/gradlew*
+/run
