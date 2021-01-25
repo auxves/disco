@@ -12,10 +12,8 @@ import net.minecraft.util.Rarity
 import net.minecraft.util.registry.Registry
 
 fun registerDiscs() {
-	addons.forEach { addon ->
-		addon.discs.forEach {
-			Registry.register(Registry.ITEM, it.id, it)
-		}
+	addons.flatMap { it.discs }.forEach {
+		Registry.register(Registry.ITEM, it.id, it)
 	}
 }
 

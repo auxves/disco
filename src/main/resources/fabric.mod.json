@@ -1,24 +1,23 @@
 {
 	"schemaVersion": 1,
-	"id": "disco",
+	"id": "${id}",
 	"version": "${version}",
-	"name": "Disco",
+	"name": "${name}",
 	"description": "Modular music disc loader",
 	"authors": ["glossnyx"],
 	"contact": {
-		"homepage": "https://github.com/glossnyx/disco",
-		"sources": "https://github.com/glossnyx/disco"
+		"sources": "https://github.com/glossnyx/${id}"
 	},
 	"license": "MIT",
-	"icon": "assets/disco/icon.png",
+	"icon": "assets/${id}/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": ["io.glossnyx.disco.EntrypointKt::init"]
 	},
 	"depends": {
+		"minecraft": "1.16.x",
 		"fabricloader": ">=0.8.7",
-		"fabric": "*",
-		"fabric-language-kotlin": "*",
-		"minecraft": "1.16.x"
+		"fabric-loot-tables-v1": "*",
+		"fabric-language-kotlin": "*"
 	}
 }
