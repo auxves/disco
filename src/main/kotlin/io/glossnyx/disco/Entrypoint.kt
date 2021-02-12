@@ -19,7 +19,11 @@ fun init() {
 	}
 
 	LootTableLoadingCallback.EVENT.register { _, lootManager, id, supplier, _ ->
-		val tables = addons.mapNotNull { it.tables[id] }.flatten().distinct()
+		val tables = addons
+			.flatMap { it.tables.entries }
+			.filter { it.value.contains(id) }
+			.map { it.key }
+			.distinct()
 
 		tables.forEach {
 			val table = lootManager.getTable(it) as LootTableAccessor
