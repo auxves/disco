@@ -5,8 +5,6 @@ java.targetCompatibility = JavaVersion.VERSION_1_8
 
 fun p(name: String) = project.property(name).toString()
 
-val apiVersion = p("fabric_api")
-
 plugins {
 	id("fabric-loom")
 	kotlin("jvm")
@@ -17,7 +15,10 @@ dependencies {
 	mappings("net.fabricmc:yarn:${p("yarn")}:v2")
 
 	modImplementation("net.fabricmc:fabric-loader:${p("loader")}")
-	modImplementation(fabricApi.module("fabric-loot-tables-v1", apiVersion))
+
+	listOf("fabric-resource-loader-v0", "fabric-loot-tables-v1").forEach {
+		modImplementation(fabricApi.module(it, p("fabric_api")))
+	}
 
 	modImplementation("net.fabricmc:fabric-language-kotlin:${p("fabric_kotlin")}")
 }

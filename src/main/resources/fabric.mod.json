@@ -6,6 +6,7 @@
 	"description": "Modular music disc loader",
 	"authors": ["glossnyx"],
 	"contact": {
+		"homepage": "https://github.com/glossnyx/${id}",
 		"sources": "https://github.com/glossnyx/${id}"
 	},
 	"license": "MIT",
@@ -14,9 +15,11 @@
 	"entrypoints": {
 		"main": ["io.glossnyx.disco.EntrypointKt::init"]
 	},
+	"mixins": ["${id}.mixins.json"],
 	"depends": {
 		"minecraft": "1.16.x",
 		"fabricloader": ">=0.8.7",
+		"fabric-resource-loader-v0": "*",
 		"fabric-loot-tables-v1": "*",
 		"fabric-language-kotlin": "*"
 	}
