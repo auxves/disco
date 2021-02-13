@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "${id}",
 	"version": "${version}",
-	"name": "${name}",
+	"name": "${title}",
 	"description": "Modular music disc loader",
 	"authors": ["glossnyx"],
 	"contact": {
