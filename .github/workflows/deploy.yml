@@ -20,7 +20,7 @@ jobs:
       - name: Build
         uses: gradle/gradle-build-action@v2
         with:
-          gradle-version: stable
+          gradle-version: current
           arguments: build
 
       - name: Setup Environment
