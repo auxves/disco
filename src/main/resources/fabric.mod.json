@@ -3,22 +3,22 @@
 	"id": "${id}",
 	"version": "${version}",
 	"name": "${title}",
-	"description": "Modular music disc loader",
-	"authors": ["glossnyx"],
+	"description": "${description}",
+	"authors": ["${author}"],
 	"contact": {
-		"homepage": "https://github.com/glossnyx/${id}",
-		"sources": "https://github.com/glossnyx/${id}"
+		"homepage": "https://github.com/${author}/${id}",
+		"sources": "https://github.com/${author}/${id}"
 	},
 	"license": "MIT",
 	"icon": "assets/${id}/icon.png",
 	"environment": "*",
 	"entrypoints": {
-		"main": ["io.glossnyx.disco.EntrypointKt::init"]
+		"main": ["io.${author}.${id}.EntrypointKt::init"]
 	},
 	"mixins": ["${id}.mixins.json"],
 	"depends": {
-		"minecraft": "1.16.x",
-		"fabricloader": ">=0.8.7",
+		"minecraft": "1.17.x",
+		"fabricloader": "*",
 		"fabric-resource-loader-v0": "*",
 		"fabric-loot-tables-v1": "*",
 		"fabric-language-kotlin": "*"

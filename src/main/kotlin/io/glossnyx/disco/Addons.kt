@@ -11,14 +11,14 @@ data class Addon(
 	val tables: Map<Identifier, List<Identifier>>
 )
 
-fun CustomValue.CvObject.toIdentifierMap() = map { (key, value) ->
+fun CustomValue.CvObject.toIdentifierMap() = associate { (key, value) ->
 	Identifier(key) to value.asArray.toList().map { Identifier(it.asString) }
-}.toMap()
+}
 
 fun ModMetadata.toAddon(): Addon {
-	val custom = getCustomValue("disco").asObject
+	val custom = getCustomValue(modName).asObject
 
-	val discs = custom.get("discs").asArray.toList().map { Disc(Identifier(id, it.asString)) }
+	val discs = custom.get("discs").asArray.map { Disc(Identifier(id, it.asString)) }
 
 	val tables = custom.get("tables").let {
 		when (it.type) {
@@ -31,5 +31,5 @@ fun ModMetadata.toAddon(): Addon {
 }
 
 val addons = FabricLoader.getInstance().allMods
-	.filter { it.metadata.customValues.containsKey("disco") }
+	.filter { it.metadata.customValues.containsKey(modName) }
 	.map { it.metadata.toAddon() }
