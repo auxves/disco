@@ -13,6 +13,8 @@ import net.minecraft.util.Identifier
 import net.minecraft.util.Rarity
 import net.minecraft.util.registry.Registry
 
+const val modName = "disco"
+
 fun init() {
 	addons.flatMap { it.discs }.forEach {
 		Registry.register(Registry.ITEM, it.id, it)
@@ -39,6 +41,6 @@ private val settings = Item.Settings()
 
 class Disc(val id: Identifier) : MusicDiscItem(15, SoundEvent(id), settings) {
 	override fun getName(stack: ItemStack?): Text {
-		return TranslatableText("item.disco.all.name")
+		return TranslatableText("item.${modName}.all.name")
 	}
 }
