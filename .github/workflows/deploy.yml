@@ -12,7 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Setup Node
+      - name: Setup Java
         uses: actions/setup-java@v1
         with:
           java-version: 16
@@ -20,6 +20,7 @@ jobs:
       - name: Build
         uses: gradle/gradle-build-action@v2
         with:
+          gradle-version: stable
           arguments: build
 
       - name: Setup Environment
