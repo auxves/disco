@@ -12,24 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Setup Environment
-        run: |
-          echo "VERSION=${GITHUB_REF//refs\/tags\/v}" >> $GITHUB_ENV
-
-      - name: Setup Java
-        uses: actions/setup-java@v1
+      - name: Deploy
+        uses: glossnyx/deploy-minecraft-mod-action@main
         with:
-          java-version: 16
-
-      - name: Build
-        uses: gradle/gradle-build-action@v2
-        with:
-          gradle-version: current
-          arguments: build
-
-      - name: Publish to GitHub Releases
-        uses: AButler/upload-release-assets@v2.0
-        with:
-          files: build/libs/*-${{ env.VERSION }}.jar
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          release-tag: ${{ env.RELEASE_TAG }}
+          token: ${{ secrets.GITHUB_TOKEN }}
