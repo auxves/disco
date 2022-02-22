@@ -16,3 +16,4 @@ jobs:
         uses: glossnyx/actions/deploy-minecraft-mod@main
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          java-version: 17
