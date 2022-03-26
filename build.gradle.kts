@@ -16,7 +16,7 @@ dependencies {
 
 	modImplementation("net.fabricmc:fabric-loader:${p("loader")}")
 
-	listOf("fabric-resource-loader-v0", "fabric-loot-tables-v1").forEach {
+	listOf("fabric-resource-loader-v0", "fabric-loot-tables-v1", "fabric-registry-sync-v0").forEach {
 		modImplementation(fabricApi.module(it, p("fabric_api")))
 	}
 
