@@ -1,16 +1,14 @@
 {
-	"schemaVersion": 1,
-	"id": "disco-example",
-	"version": "1.0.0",
-	"name": "Disco Example",
-	"description": "Example Disco addon",
-	"custom": {
-		"disco": {
-			"discs": ["amazing_song"],
-			"tables": [
-				"minecraft:chests/simple_dungeon",
-				"minecraft:chests/stronghold_corridor"
-			]
-		}
-	}
+    "schemaVersion": 1,
+    "id": "disco-example",
+    "version": "1.0.0",
+    "name": "Disco Example",
+    "description": "Example Disco addon",
+    "custom": {
+        "disco": {
+            "discs": [
+                { "id": "amazing_song", "duration": 2 }
+            ]
+        }
+    }
 }
