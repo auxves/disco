@@ -6,22 +6,19 @@
 	"description": "${description}",
 	"authors": ["${author}"],
 	"contact": {
-		"homepage": "https://github.com/${author}/${id}",
+		"homepage": "https://auxves.dev/${id}",
 		"sources": "https://github.com/${author}/${id}"
 	},
 	"license": "MIT",
 	"icon": "assets/${id}/icon.png",
 	"environment": "*",
 	"entrypoints": {
-		"main": ["io.${author}.${id}.EntrypointKt::init"]
+		"main": ["dev.${author}.${id}.EntrypointKt::init"]
 	},
-	"mixins": ["${id}.mixins.json"],
+	"mixins": [],
 	"depends": {
-		"minecraft": "1.18.x",
-		"fabricloader": "*",
-		"fabric-resource-loader-v0": "*",
-		"fabric-loot-tables-v1": "*",
-		"fabric-registry-sync-v0": "*",
+		"minecraft": "1.19.x",
+		"fabric-api": "*",
 		"fabric-language-kotlin": "*"
 	}
 }

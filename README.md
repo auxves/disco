@@ -4,6 +4,12 @@ Disco is a modular music disc loader built for Fabric.
 
 Being a **loader**, it doesn't add any music discs by default and relies on addon packs to provide the sound files, textures, and translations.
 
+## Usage
+
+Instructions on creating your own addon can be found [here][wiki].
+
+For end users, the addon's `.jar` file should be placed in the fabric `mods` directory.
+
 ## Dependencies
 
 - [Fabric Loader]
@@ -14,17 +20,13 @@ Being a **loader**, it doesn't add any music discs by default and relies on addo
 
 You have three options for downloading Disco.
 
-- [CurseForge]
-- [Modrinth]
 - [GitHub Releases]
+- [Modrinth]
+- [CurseForge]
 
-## Usage
+## Suggestions
 
-Disco addons are JAR files that contain a resource pack, a data pack, and a `fabric.mod.json`. An unpacked example can be found [here][example].
-
-To create a JAR file from an unpacked addon, simply compress it into a zip file and rename the extension to `.jar`.
-
-> IMPORTANT: Make sure the `.ogg` files only have 1 audio channel (mono)
+- [Vibes] - Portable music disc player
 
 <!-- Dependencies -->
 
@@ -36,8 +38,12 @@ To create a JAR file from an unpacked addon, simply compress it into a zip file 
 
 [curseforge]: https://www.curseforge.com/minecraft/mc-mods/disco
 [modrinth]: https://modrinth.com/mod/disco
-[github releases]: https://github.com/glossnyx/disco/releases
+[github releases]: https://github.com/auxves/disco/releases
 
-<!-- Example -->
+<!-- Recommendations -->
 
-[example]: https://github.com/glossnyx/disco/tree/example
+[vibes]: https://github.com/auxves/vibes
+
+<!-- Wiki -->
+
+[wiki]: https://github.com/auxves/disco/wiki/Adding-a-Disc

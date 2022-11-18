@@ -15,11 +15,7 @@ dependencies {
 	mappings("net.fabricmc:yarn:${p("yarn")}:v2")
 
 	modImplementation("net.fabricmc:fabric-loader:${p("loader")}")
-
-	listOf("fabric-resource-loader-v0", "fabric-loot-tables-v1", "fabric-registry-sync-v0").forEach {
-		modImplementation(fabricApi.module(it, p("fabric_api")))
-	}
-
+	modImplementation("net.fabricmc.fabric-api:fabric-api:${p("fabric_api")}")
 	modImplementation("net.fabricmc:fabric-language-kotlin:${p("fabric_kotlin")}")
 }
 
