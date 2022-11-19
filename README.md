@@ -6,7 +6,7 @@ Being a **loader**, it doesn't add any music discs by default and relies on addo
 
 ## Usage
 
-Instructions on creating your own addon can be found [here][wiki].
+You can use [Disco Generator] to create your own addon with a graphical interface, or you can read the [wiki] to learn how to make one manually (useful for automation).
 
 For end users, the addon's `.jar` file should be placed in the fabric `mods` directory.
 
@@ -47,3 +47,4 @@ You have three options for downloading Disco.
 <!-- Wiki -->
 
 [wiki]: https://github.com/auxves/disco/wiki/Adding-a-Disc
+[disco generator]: https://disco.auxves.dev
