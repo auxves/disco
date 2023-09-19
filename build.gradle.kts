@@ -3,20 +3,18 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 java.sourceCompatibility = JavaVersion.VERSION_1_8
 java.targetCompatibility = JavaVersion.VERSION_1_8
 
-fun p(name: String) = project.property(name).toString()
-
 plugins {
 	id("fabric-loom")
 	kotlin("jvm")
 }
 
 dependencies {
-	minecraft("com.mojang:minecraft:${p("minecraft")}")
-	mappings("net.fabricmc:yarn:${p("yarn")}:v2")
+	minecraft("com.mojang:minecraft:${properties["minecraft"]}")
+	mappings("net.fabricmc:yarn:${properties["yarn"]}:v2")
 
-	modImplementation("net.fabricmc:fabric-loader:${p("loader")}")
-	modImplementation("net.fabricmc.fabric-api:fabric-api:${p("fabric_api")}")
-	modImplementation("net.fabricmc:fabric-language-kotlin:${p("fabric_kotlin")}")
+	modImplementation("net.fabricmc:fabric-loader:${properties["loader"]}")
+	modImplementation("net.fabricmc.fabric-api:fabric-api:${properties["fabric_api"]}")
+	modImplementation("net.fabricmc:fabric-language-kotlin:${properties["fabric_kotlin"]}")
 }
 
 tasks.named<Copy>("processResources") {

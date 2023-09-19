@@ -5,7 +5,7 @@ pluginManagement {
 	}
 
 	plugins {
-		id("fabric-loom") version "1.0-SNAPSHOT"
-		kotlin("jvm") version "1.7.21"
+		id("fabric-loom") version "1.3-SNAPSHOT"
+		kotlin("jvm") version "1.9.10"
 	}
 }

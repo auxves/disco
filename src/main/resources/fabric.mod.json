@@ -1,23 +1,23 @@
 {
 	"schemaVersion": 1,
-	"id": "${id}",
+	"id": "disco",
 	"version": "${version}",
-	"name": "${title}",
-	"description": "${description}",
-	"authors": ["${author}"],
+	"name": "Disco — Custom Music Discs",
+	"description": "A modular music disc loader",
+	"authors": ["auxves"],
 	"contact": {
-		"homepage": "https://auxves.dev/${id}",
-		"sources": "https://github.com/${author}/${id}"
+		"homepage": "https://disco.auxves.dev",
+		"sources": "https://github.com/auxves/disco"
 	},
 	"license": "MIT",
-	"icon": "assets/${id}/icon.png",
+	"icon": "assets/disco/icon.png",
 	"environment": "*",
 	"entrypoints": {
-		"main": ["dev.${author}.${id}.EntrypointKt::init"]
+		"main": ["dev.auxves.disco.EntrypointKt::init"]
 	},
 	"mixins": [],
 	"depends": {
-		"minecraft": "1.19.x",
+		"minecraft": "1.20.x",
 		"fabric-api": "*",
 		"fabric-language-kotlin": "*"
 	}
